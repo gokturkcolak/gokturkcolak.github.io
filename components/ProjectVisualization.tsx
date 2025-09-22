@@ -24,11 +24,10 @@ export default function ProjectVisualization({ data }: ProjectVisualizationProps
       labelSkipWidth={24}
       labelSkipHeight={18}
       labelTextColor="#F8F5F0"
-      motionConfig={{ mass: 2, stiffness: 60, damping: 18 }}
+      motionConfig={{ mass: 2, tension: 60, damping: 18 }}
       animate={true}
       theme={{
-        textColor: "#2A2A2A",
-        axis: { ticks: { text: { fontSize: 10 } } },
+        axis: { ticks: { text: { fontSize: 10, fill: "#2A2A2A" } } },
         tooltip: {
           container: { background: "#F8F5F0", color: "#2A2A2A", border: "1px solid #2A2A2A", borderRadius: 0 },
         },
