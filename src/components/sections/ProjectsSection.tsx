@@ -113,7 +113,7 @@ export default function ProjectsSection() {
                     {project.github && (
                       <Button variant="outline" size="sm" className="gap-2">
                         <Github className="w-4 h-4" />
-                        View Code
+                        Code is not public yet
                       </Button>
                     )}
 

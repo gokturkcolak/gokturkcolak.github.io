@@ -17,10 +17,10 @@ const tidyTuesdayEntries = [
       "Built linear regression model predicting September ratings with strong performance alignment",
       "Analyzed age-related performance curves revealing peak chess performance patterns",
       "Identified gender and title-based rating distributions across player segments",
-      "Examined federation-level competitive strength with 500+ player threshold analysis"
+      "Examined federation-level competitive strength with player threshold analysis"
     ],
     github: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/chess_ratings.Rmd",
-    visualization: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/chess_ratings.png"
+    visualization: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/chess_ratings_plots.png"
   }
   // Add more entries as you complete them
 ];
