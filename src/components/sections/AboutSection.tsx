@@ -17,8 +17,7 @@ export default function AboutSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Economics undergraduate with a passion for bridging theoretical knowledge with practical applications 
-            in financial markets and data science.
+            Economics undergraduate with a strong foundation in quantitative methods and data analysis for financial markets.
           </p>
         </motion.div>
 
@@ -31,19 +30,19 @@ export default function AboutSection() {
             className="space-y-6"
           >
             <p className="text-lg leading-relaxed">
-              I&apos;m an economics student at Istanbul University with a deep interest in financial markets, 
-              macroeconomic analysis, and data science. My academic journey has equipped me 
+              I&apos;m an economics student at Istanbul University with a deep interest in financial markets,
+              macroeconomic analysis, and data science. My academic journey has equipped me
               with strong analytical skills and a solid foundation in economic theory.
             </p>
-            
+
             <p className="text-lg leading-relaxed">
-              Currently developing algorithmic trading systems and having completed comprehensive 
-              macroeconomic research, I combine theoretical knowledge with practical programming 
+              Currently developing algorithmic trading systems and having completed comprehensive
+              macroeconomic research, I combine theoretical knowledge with practical programming
               skills in Python and R to create meaningful insights from complex financial data.
             </p>
 
             <p className="text-lg leading-relaxed">
-              With strong English proficiency, I bring analytical rigor to my work and 
+              With strong English proficiency, I bring analytical rigor to my work and
               am passionate about using technology to solve real-world economic problems.
             </p>
           </motion.div>

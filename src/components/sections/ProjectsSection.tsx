@@ -116,12 +116,7 @@ export default function ProjectsSection() {
                         View Code
                       </Button>
                     )}
-                    {project.demo && (
-                      <Button variant="outline" size="sm" className="gap-2">
-                        <ExternalLink className="w-4 h-4" />
-                        Live Demo
-                      </Button>
-                    )}
+
                     {project.pdf && (
                       <Button variant="outline" size="sm" className="gap-2" asChild>
                         <a href="/papers/macroeconomics-analysis.pdf" target="_blank" rel="noopener noreferrer">
