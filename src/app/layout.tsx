@@ -10,6 +10,16 @@ export const metadata: Metadata = {
   keywords: ['Economics', 'Data Analysis', 'Quantitative Finance', 'Algorithmic Trading', 'Python', 'R Programming', 'Istanbul University'],
   authors: [{ name: 'Göktürk Çolak' }],
   creator: 'Göktürk Çolak',
+  icons: {
+    icon: [
+      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Göktürk Çolak - Economics Student & Data Scientist',
     description: 'Economics undergraduate passionate about quantitative finance, algorithmic trading, and macroeconomic analysis.',
