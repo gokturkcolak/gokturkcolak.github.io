@@ -72,7 +72,7 @@ export default function Navbar() {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/gokturkcolak" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4" />
               </a>
             </Button>
@@ -112,7 +112,7 @@ export default function Navbar() {
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/gokturkcolak" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="w-4 h-4" />
                   </a>
                 </Button>

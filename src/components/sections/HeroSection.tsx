@@ -62,12 +62,12 @@ export default function HeroSection() {
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>
-                <a href="mailto:gokturkcolakktd@gmail.com">
+                <a href="mailto:gokturkcolaktkd@gmail.com">
                   <Mail className="w-4 h-4" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>
-                <a href="https://linkedin.com/in/gokturkcolak" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/gokturkcolak" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4" />
                 </a>
               </Button>

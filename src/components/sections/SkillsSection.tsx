@@ -154,10 +154,39 @@ export default function SkillsSection() {
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold mb-4">Currently Learning</h3>
               <div className="flex flex-wrap justify-center gap-2">
-                <Badge variant="outline">Machine Learning (June 2026)</Badge>
-                <Badge variant="outline">Advanced Statistical Modeling (January 2026)</Badge>
+                <Badge variant="outline">Machine Learning</Badge>
+                <Badge variant="outline">Advanced Statistical Modeling</Badge>
                 <Badge variant="outline">Blockchain Analytics</Badge>
                 <Badge variant="outline">Quantitative Finance</Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        {/* Currently Studying Books */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-8 text-center"
+        >
+          <Card className="bg-primary/5 border-primary/20">
+            <CardContent className="p-8">
+              <h3 className="text-xl font-semibold mb-4">Currently Reading</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                <div className="p-4 bg-background rounded-lg border">
+                  <h4 className="font-semibold text-sm mb-1">Systematic Trading</h4>
+                  <p className="text-xs text-muted-foreground">Robert Carver</p>
+                </div>
+                <div className="p-4 bg-background rounded-lg border">
+                  <h4 className="font-semibold text-sm mb-1">An Introduction to Statistical Learning with Applications in R</h4>
+                  <p className="text-xs text-muted-foreground">Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani</p>
+                </div>
+                <div className="p-4 bg-background rounded-lg border">
+                  <h4 className="font-semibold text-sm mb-1">Options, Futures and Other Derivatives</h4>
+                  <p className="text-xs text-muted-foreground">John C. Hull</p>
+                </div>
               </div>
             </CardContent>
           </Card>

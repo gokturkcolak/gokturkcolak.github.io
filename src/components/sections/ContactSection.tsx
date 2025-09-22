@@ -9,8 +9,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "gokturkcolakktd@gmail.com",
-    href: "mailto:gokturkcolakktd@gmail.com"
+    value: "gokturkcolaktkd@gmail.com",
+    href: "mailto:gokturkcolaktkd@gmail.com"
   },
   {
     icon: MapPin,
@@ -121,7 +121,7 @@ export default function ContactSection() {
                 
                 <div className="pt-4 space-y-3">
                   <Button className="w-full gap-2" asChild>
-                    <a href="mailto:gokturkcolakktd@gmail.com">
+                    <a href="mailto:gokturkcolaktkd@gmail.com">
                       <Mail className="w-4 h-4" />
                       Send Email
                     </a>

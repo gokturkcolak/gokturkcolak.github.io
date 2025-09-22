@@ -20,7 +20,7 @@ const tidyTuesdayEntries = [
       "Examined federation-level competitive strength with 500+ player threshold analysis"
     ],
     github: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/chess_ratings.Rmd",
-    visualization: "#"
+    visualization: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/chess_ratings.png"
   }
   // Add more entries as you complete them
 ];
@@ -92,14 +92,20 @@ export default function TidyTuesdaySection() {
                     </div>
 
                     <div className="flex gap-2 pt-2">
-                      <Button variant="outline" size="sm" className="gap-2 flex-1">
-                        <Github className="w-3 h-3" />
-                        Code
+                      <Button variant="outline" size="sm" className="gap-2 flex-1" asChild>
+                        <a href={entry.github} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-3 h-3" />
+                          Code
+                        </a>
                       </Button>
-                      <Button variant="outline" size="sm" className="gap-2 flex-1">
-                        <BarChart3 className="w-3 h-3" />
-                        Plots
-                      </Button>
+                      {entry.visualization && entry.visualization !== "#" && (
+                        <Button variant="outline" size="sm" className="gap-2 flex-1" asChild>
+                          <a href={entry.visualization} target="_blank" rel="noopener noreferrer">
+                            <BarChart3 className="w-3 h-3" />
+                            Plots
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
