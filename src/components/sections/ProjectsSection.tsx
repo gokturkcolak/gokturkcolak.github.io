@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink, TrendingUp, BarChart3, FileText } from "lucide-react";
+import { Github, TrendingUp, BarChart3 } from "lucide-react";
 
 const projects = [
   {
@@ -34,8 +34,7 @@ const projects = [
       "Analyzed key economic indicators including GDP, inflation, unemployment, public debt, and productivity trends",
       "Evaluated policy impacts across four major economic phases including Great Recession and COVID-19",
       "Produced structured academic report with detailed financial data tables and policy assessments"
-    ],
-    pdf: true
+    ]
   }
 ];
 
@@ -84,7 +83,7 @@ export default function ProjectsSection() {
                     {project.description}
                   </CardDescription>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-6">
                   <div>
                     <h4 className="font-semibold mb-3">Key Features</h4>
@@ -97,7 +96,7 @@ export default function ProjectsSection() {
                       ))}
                     </ul>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-semibold mb-3">Tools & Methods</h4>
                     <div className="flex flex-wrap gap-2">
@@ -108,7 +107,7 @@ export default function ProjectsSection() {
                       ))}
                     </div>
                   </div>
-                  
+
                   <div className="flex gap-3 pt-4">
                     {project.github && (
                       <Button variant="outline" size="sm" className="gap-2">
@@ -117,14 +116,7 @@ export default function ProjectsSection() {
                       </Button>
                     )}
 
-                    {project.pdf && (
-                      <Button variant="outline" size="sm" className="gap-2" asChild>
-                        <a href="/papers/macroeconomics-analysis.pdf" target="_blank" rel="noopener noreferrer">
-                          <FileText className="w-4 h-4" />
-                          View Paper
-                        </a>
-                      </Button>
-                    )}
+
                   </div>
                 </CardContent>
               </Card>

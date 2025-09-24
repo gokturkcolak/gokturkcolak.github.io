@@ -7,7 +7,7 @@ import { Briefcase, Users, GraduationCap, Calendar } from "lucide-react";
 
 const workExperiences = [
   {
-    title: "Intern Student",
+    title: "Undergraduate Research Assistant",
     company: "Istanbul University Informatics Department",
     location: "Beyazıt, Istanbul",
     period: "November 2023 – June 2024",
@@ -16,7 +16,7 @@ const workExperiences = [
     description: "Collected and organized data and conducted basic research for the Informatics Department.",
     achievements: [
       "Collected and organized various data sets",
-      "Used Microsoft Excel and Google Sheets for data management",
+      "Used Microsoft Excel and Google Sheets for data management & collaboration",
       "Supported department operations with data collection tasks",
       "Gained experience in systematic data organization"
     ]
@@ -34,7 +34,7 @@ const studentActivities = [
     description: "Organized institutional visits and managed corporate communications, including a visit to IBB Data Laboratory.",
     achievements: [
       "Organized institutional visit to IBB Data Laboratory",
-      "Managed corporate communications and partnerships",
+      "Managed corporate communications",
       "Volunteered at 22nd Academic Informatics Conference",
       "Focused on technology and innovation trends"
     ]
@@ -71,7 +71,7 @@ const certifications = [
   },
   {
     name: "Digital Banking",
-    issuer: "İşbank Preschool",
+    issuer: "İşbank ProSchool",
     year: "2024",
     category: "Banking"
   },
