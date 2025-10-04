@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, TrendingUp, BarChart3 } from "lucide-react";
+import { Github, TrendingUp, BarChart3, Activity } from "lucide-react";
 
 const projects = [
   {
@@ -21,7 +21,7 @@ const projects = [
       "Performance analytics"
     ],
     github: "https://github.com/gokturkcolak/algorithmic-trading-system",
-    demo: "#"
+    backtesting: "https://github.com/gokturkcolak/algorithmic-trading-system/tree/main/backtesting"
   },
   {
     title: "Macroeconomic Analysis of the U.S. Economy (2008-2023)",
@@ -115,8 +115,14 @@ export default function ProjectsSection() {
                         Code is not public yet
                       </Button>
                     )}
-
-
+                    {project.backtesting && (
+                      <Button variant="outline" size="sm" className="gap-2" asChild>
+                        <a href={project.backtesting} target="_blank" rel="noopener noreferrer">
+                          <Activity className="w-4 h-4" />
+                          Backtesting Code
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>

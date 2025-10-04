@@ -94,7 +94,7 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience & Leadership</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience & Teamwork</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Professional experience and leadership roles that shaped my analytical and organizational skills
           </p>
