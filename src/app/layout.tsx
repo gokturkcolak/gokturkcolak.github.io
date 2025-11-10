@@ -5,9 +5,9 @@ import Navbar from '@/components/Navbar';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Göktürk Çolak - Economics Student & Data Scientist',
+  title: 'Göktürk Çolak - Economics Student & aspiring Data Scientist',
   description: 'Economics undergraduate passionate about quantitative finance, algorithmic trading, and macroeconomic analysis. Building systematic investment approaches with data-driven insights.',
-  keywords: ['Economics', 'Data Analysis', 'Quantitative Finance', 'Algorithmic Trading', 'Python', 'R Programming', 'Istanbul University'],
+  keywords: ['Economics', 'Data Analysis', 'Data Science', 'Quantitative Finance', 'Algorithmic Trading', 'Python', 'R Programming', 'Istanbul University'],
   authors: [{ name: 'Göktürk Çolak' }],
   creator: 'Göktürk Çolak',
   icons: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: 'Göktürk Çolak - Economics Student & Data Scientist',
+    title: 'Göktürk Çolak - Economics Student & aspiring Data Scientist',
     description: 'Economics undergraduate passionate about quantitative finance, algorithmic trading, and macroeconomic analysis.',
     url: 'https://gokturkcolak.com',
     siteName: 'Göktürk Çolak Portfolio',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Göktürk Çolak - Economics Student & Data Scientist',
+    title: 'Göktürk Çolak - Economics Student & aspiring Data Scientist',
     description: 'Economics undergraduate passionate about quantitative finance, algorithmic trading, and macroeconomic analysis.',
   },
 };

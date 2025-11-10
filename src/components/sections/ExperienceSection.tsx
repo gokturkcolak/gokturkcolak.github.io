@@ -25,10 +25,22 @@ const workExperiences = [
 
 const studentActivities = [
   {
+    title: "Research Department Member",
+    company: "Istanbul University Young Investors Club (Genç Yatırımcılar Kulübü)",
+    location: "Beyazıt, Istanbul",
+    period: "October 2025 – Present",
+    type: "Student Club",
+    icon: Users,
+    description: "Conduct research and prepare draft analyses to support the Social Media Department’s insights and posts",
+    achievements: [
+      "Stay updated on the latest trends in the crypto and stock markets"
+    ]
+  },
+  {
     title: "Vice President",
     company: "Istanbul University Data Club",
     location: "Beyazıt, Istanbul",
-    period: "November 2023 – June 2024",
+    period: "Oct. 2023 – Oct. 2024",
     type: "Student Club",
     icon: Users,
     description: "Organized institutional visits and managed corporate communications, including a visit to IBB Data Laboratory.",
@@ -58,6 +70,12 @@ const studentActivities = [
 
 const certifications = [
   {
+    name: "Exploratory Data Analysis in R",
+    issuer: "DataCamp",
+    year: "2025",
+    category: "Data Science"
+  },
+  {
     name: "Financial Literacy Level 3 – SPL",
     issuer: "SPL",
     year: "2024",
@@ -75,12 +93,6 @@ const certifications = [
     year: "2024",
     category: "Banking"
   },
-  {
-    name: "Entrepreneurship Training",
-    issuer: "İSTKA Social Development Support Program",
-    year: "2024",
-    category: "Business"
-  }
 ];
 
 export default function ExperienceSection() {

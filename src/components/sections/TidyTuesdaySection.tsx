@@ -12,7 +12,7 @@ const tidyTuesdayEntries = [
     description: "Comprehensive analysis of FIDE chess ratings exploring player performance patterns, demographic trends, age-related performance curves, and predictive modeling across global chess federations.",
     date: "2025-09-20",
     dataset: "FIDE Chess Player Ratings",
-    technologies: ["R", "ggplot2", "dplyr", "tidyverse", "Linear Regression"],
+    technologies: ["R", "ggplot2", "dplyr", "tidyverse", "caret", "Linear Regression"],
     insights: [
       "Built linear regression model predicting September ratings with strong performance alignment",
       "Analyzed age-related performance curves revealing peak chess performance patterns",
@@ -38,7 +38,7 @@ export default function TidyTuesdaySection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">TidyTuesday Challenge</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Weekly data visualization challenges showcasing my R programming and data analysis skills
+          Weekly data visualization challenges by the global Data Science Learning Community (R4DS), showcasing my R programming and data analysis skills.
           </p>
         </motion.div>
 
