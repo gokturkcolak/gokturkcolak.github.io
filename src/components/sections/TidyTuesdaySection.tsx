@@ -20,7 +20,7 @@ const tidyTuesdayEntries = [
       "Examined federation-level competitive strength with player threshold analysis"
     ],
     github: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/chess_ratings.Rmd",
-    visualization: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/chess_ratings_plots.png"
+    visualization: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/2025_38.png"
   }
   // Add more entries as you complete them
 ];
