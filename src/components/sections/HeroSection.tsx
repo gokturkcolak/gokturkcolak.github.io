@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
+import { Kaggle } from "@/components/icons/Kaggle";
 
 export default function HeroSection() {
   return (
@@ -59,6 +60,11 @@ export default function HeroSection() {
               <Button variant="outline" size="icon" asChild>
                 <a href="https://github.com/gokturkcolak" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4" />
+                </a>
+              </Button>
+              <Button variant="outline" size="icon" asChild>
+                <a href="https://www.kaggle.com/gokturkcolak" target="_blank" rel="noopener noreferrer">
+                  <Kaggle className="w-4 h-4" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>

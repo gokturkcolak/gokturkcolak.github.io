@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Github, Download } from "lucide-react";
+import { Kaggle } from "@/components/icons/Kaggle";
 
 const contactInfo = [
   {
@@ -23,6 +24,12 @@ const contactInfo = [
     label: "GitHub",
     value: "github.com/gokturkcolak",
     href: "https://github.com/gokturkcolak"
+  },
+  {
+    icon: Kaggle,
+    label: "Kaggle",
+    value: "kaggle.com/gokturkcolak",
+    href: "https://www.kaggle.com/gokturkcolak"
   }
 ];
 
@@ -118,7 +125,7 @@ export default function ContactSection() {
                     <span className="text-sm">Financial Technology</span>
                   </li>
                 </ul>
-                
+
                 <div className="pt-4 space-y-3">
                   <Button className="w-full gap-2" asChild>
                     <a href="mailto:gokturkcolaktkd@gmail.com">
@@ -126,7 +133,7 @@ export default function ContactSection() {
                       Send Email
                     </a>
                   </Button>
-                  
+
                   <Button variant="outline" className="w-full gap-2" asChild>
                     <a href="/cv.pdf" download="Gokturk_Colak_CV.pdf">
                       <Download className="w-4 h-4" />

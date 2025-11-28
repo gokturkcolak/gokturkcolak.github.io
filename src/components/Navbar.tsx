@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Menu, X } from "lucide-react";
+import { Kaggle } from "@/components/icons/Kaggle";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const navItems = [
@@ -36,10 +37,9 @@ export default function Navbar() {
   };
 
   return (
-    <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-md border-b" : "bg-transparent"
-      }`}
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-md border-b" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -69,6 +69,11 @@ export default function Navbar() {
             <Button variant="ghost" size="icon" asChild>
               <a href="https://github.com/gokturkcolak" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a href="https://www.kaggle.com/gokturkcolak" target="_blank" rel="noopener noreferrer">
+                <Kaggle className="w-4 h-4" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
@@ -109,6 +114,11 @@ export default function Navbar() {
                 <Button variant="ghost" size="icon" asChild>
                   <a href="https://github.com/gokturkcolak" target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 h-4" />
+                  </a>
+                </Button>
+                <Button variant="ghost" size="icon" asChild>
+                  <a href="https://www.kaggle.com/gokturkcolak" target="_blank" rel="noopener noreferrer">
+                    <Kaggle className="w-4 h-4" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
