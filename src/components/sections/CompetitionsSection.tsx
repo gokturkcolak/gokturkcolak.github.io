@@ -130,7 +130,7 @@ export default function CompetitionsSection() {
                       {competition.github && (
                         <Button variant="outline" size="sm" className="gap-2">
                           <Code className="w-4 h-4" />
-                          Solution is not published yet
+                          Solution is not published
                         </Button>
                       )}
                     </div>
