@@ -11,8 +11,8 @@ const skillCategories = [
     icon: Code,
     description: "Languages and tools for data analysis and development",
     skills: [
-      { name: "Python", level: "Advanced", details: "NumPy, Pandas, Matplotlib" },
-      { name: "R Programming", level: "Advanced", details: "ggplot2, tidyr, dplyr, XGBoost, shiny" },
+      { name: "Python", level: "Advanced", details: "NumPy, Pandas, Matplotlib, scikit-learn, catboost, XGBoost" },
+      { name: "R Programming", level: "Advanced", details: "ggplot2, tidyr, dplyr, caret, catboost, XGBoost, shiny" },
       { name: "MS Excel", level: "Advanced", details: "Complex formulas, pivot tables" },
       { name: "GitHub", level: "Intermediate", details: "Version control, collaboration" }
     ]
