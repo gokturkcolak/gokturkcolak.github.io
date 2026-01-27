@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Göktürk Çolak - Economics Student & aspiring Data Scientist',
     description: 'Economics undergraduate passionate about quantitative finance, algorithmic trading, and macroeconomic analysis.',
-    url: 'https://gokturkcolak.com',
+    url: 'https://gokturkcolak.github.io',
     siteName: 'Göktürk Çolak Portfolio',
     locale: 'en_US',
     type: 'website',

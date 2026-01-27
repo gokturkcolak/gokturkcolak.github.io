@@ -9,19 +9,18 @@ import { Github, TrendingUp, BarChart3, Activity } from "lucide-react";
 const projects = [
   {
     title: "Algorithmic Trading System",
-    description: "Python-based systematic investment approach with quantitative analysis capabilities, risk management frameworks, and backtesting for investment strategy validation.",
+    description: "Data Science focused trading bot leveraging ML algorithms for price prediction and automated execution. Features a production-ready model deployment pipeline using XGBoostClassifier.",
     icon: TrendingUp,
     status: "Ongoing",
-    technologies: ["Python", "NumPy", "Pandas", "Matplotlib", "Risk Management"],
+    technologies: ["Python", "XGBoost", "Scikit-learn", "Pandas", "NumPy"],
     features: [
-      "Systematic investment strategies",
-      "Quantitative analysis tools",
-      "Risk management frameworks",
-      "Backtesting capabilities",
-      "Performance analytics"
+      "ML-based price prediction using XGBoostClassifier",
+      "Automated model deployment infrastructure",
+      "Custom model serialization (model.json)",
+      "Backtesting validation pipeline",
+      "Real-time market data processing"
     ],
-    github: "https://github.com/gokturkcolak/algorithmic-trading-system",
-    backtesting: "https://github.com/gokturkcolak/algorithmic-trading-system/tree/main/backtesting"
+    github: "https://github.com/gokturkcolak/algorithmic-trading-system"
   },
   {
     title: "Macroeconomic Analysis of the U.S. Economy (2008-2023)",
@@ -115,14 +114,7 @@ export default function ProjectsSection() {
                         Code is not public yet
                       </Button>
                     )}
-                    {project.backtesting && (
-                      <Button variant="outline" size="sm" className="gap-2" asChild>
-                        <a href={project.backtesting} target="_blank" rel="noopener noreferrer">
-                          <Activity className="w-4 h-4" />
-                          Backtesting Code
-                        </a>
-                      </Button>
-                    )}
+
                   </div>
                 </CardContent>
               </Card>

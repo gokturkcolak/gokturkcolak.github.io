@@ -36,8 +36,8 @@ export default function AboutSection() {
             </p>
 
             <p className="text-lg leading-relaxed">
-              Currently developing algorithmic trading systems and having completed comprehensive
-              macroeconomic research, I combine theoretical knowledge with practical programming
+              Currently developing algorithmic trading systems in my junior year and having completed my
+              Macroeconomic Analysis paper as a sophomore, I combine theoretical knowledge with practical programming
               skills in Python and R to create meaningful insights from complex financial data.
             </p>
 
