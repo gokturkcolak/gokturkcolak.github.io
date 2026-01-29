@@ -9,16 +9,17 @@ import { Github, TrendingUp, BarChart3, Activity } from "lucide-react";
 const projects = [
   {
     title: "Algorithmic Trading System",
-    description: "Data Science focused trading bot leveraging ML algorithms for price prediction and automated execution. Features a production-ready model deployment pipeline using XGBoostClassifier.",
+    description: "A quantitative trading engine applying the economic theory of Hysteresis to reduce market noise and whipsaw trades. Features a production-ready ML pipeline deployed 24/7 on AWS EC2.",
     icon: TrendingUp,
     status: "Ongoing",
-    technologies: ["Python", "XGBoost", "Scikit-learn", "Pandas", "NumPy"],
+    technologies: ["Python", "XGBoost", "Scikit-learn", "Pandas", "NumPy", "AWS EC2", "Quantitative Finance"],
     features: [
-      "ML-based price prediction using XGBoostClassifier",
+      "Signal refinement using an XGBoost Classifier trained on RSI, MACD, and OBV indicators",
+      "Live Binance API integration via CCXT for automated trade execution",
+      "Hysteresis-based entry/exit logic to maintain momentum-driven positions and filter volatility",
       "Automated model deployment infrastructure",
       "Custom model serialization (model.json)",
-      "Backtesting validation pipeline",
-      "Real-time market data processing"
+      "Backtesting validation pipeline"
     ],
     github: "https://github.com/gokturkcolak/algorithmic-trading-system"
   },
@@ -109,9 +110,11 @@ export default function ProjectsSection() {
 
                   <div className="flex gap-3 pt-4">
                     {project.github && (
-                      <Button variant="outline" size="sm" className="gap-2">
-                        <Github className="w-4 h-4" />
-                        Code is not public yet
+                      <Button variant="outline" size="sm" className="gap-2" asChild>
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-4 h-4" />
+                          Code
+                        </a>
                       </Button>
                     )}
 
