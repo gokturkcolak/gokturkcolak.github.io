@@ -70,16 +70,16 @@ const studentActivities = [
 
 const certifications = [
   {
+    name: "Machine Learning for Time Series Data in Python",
+    issuer: "DataCamp",
+    year: "2026",
+    category: "Data Science"
+  },
+  {
     name: "Exploratory Data Analysis in R",
     issuer: "DataCamp",
     year: "2025",
     category: "Data Science"
-  },
-  {
-    name: "Financial Literacy Level 3 – SPL",
-    issuer: "SPL",
-    year: "2024",
-    category: "Finance"
   },
   {
     name: "Next Generation Banking Simulation",
