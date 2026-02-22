@@ -243,9 +243,9 @@ export default function ExperienceSection() {
                 <CardContent className="space-y-4">
                   {certifications.map((cert, index) => (
                     <div key={index} className="border-l-2 border-primary/20 pl-4 pb-3">
-                      <div className="flex items-center justify-between mb-1">
+                      <div className="flex items-start justify-between gap-2 mb-1">
                         <h4 className="font-medium text-sm">{cert.name}</h4>
-                        <Badge variant="outline" className="text-xs">{cert.category}</Badge>
+                        <Badge variant="outline" className="text-xs flex-shrink-0">{cert.category}</Badge>
                       </div>
                       <p className="text-sm text-muted-foreground">{cert.issuer}</p>
                       <p className="text-xs text-muted-foreground">{cert.year}</p>
