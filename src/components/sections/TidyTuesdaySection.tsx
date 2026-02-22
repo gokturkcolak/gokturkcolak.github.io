@@ -19,10 +19,39 @@ const tidyTuesdayEntries = [
       "Identified gender and title-based rating distributions across player segments",
       "Examined federation-level competitive strength with player threshold analysis"
     ],
-    github: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/chess_ratings.Rmd",
-    visualization: "https://github.com/gokturkcolak/tidytuesday/blob/main/chess_ratings/2025_38.png"
+    github: "https://github.com/gokturkcolak/tidytuesday/blob/main/2025/Week%2038/chess_ratings.Rmd",
+    visualization: "https://github.com/gokturkcolak/tidytuesday/blob/main/2025/Week%2038/chess_ratings.png"
+  },
+  {
+    title: "2026 Winter Olympics Schedule Analysis | W6 - 2026",
+    description: "Exploratory visual analysis of the 2026 Milan Cortina Winter Olympics schedule, examining session types, daily rhythms across the Games, and venue activity distribution.",
+    date: "2026-02-13",
+    dataset: "2026 Winter Olympics",
+    technologies: ["R", "ggplot2", "dplyr", "tidyverse", "lubridate", "patchwork", "ggbranding"],
+    insights: [
+      "Visualized the training-vs-competition session split with a donut chart highlighting scheduling priorities",
+      "Revealed daily session volume patterns across the week with a gradient bar chart",
+      "Ranked the top 10 busiest venues by total scheduled sessions using a lollipop chart",
+      "Identified peak competition days and the disciplines with the highest number of events"
+    ],
+    github: "https://github.com/gokturkcolak/tidytuesday/blob/main/2026/Week_6/winter_olympics.Rmd",
+    visualization: "https://github.com/gokturkcolak/tidytuesday/blob/main/2026/Week_6/winter_olympics.png"
+  },
+  {
+    title: "New Zealand Agricultural Production | W7 - 2026",
+    description: "Multi-panel visual analysis of New Zealand's agricultural statistics from Stats NZ, tracing long-term trends in cattle populations, wheat farming efficiency, and land use across major sectors.",
+    date: "2026-02-16",
+    dataset: "NZ Agricultural Production",
+    technologies: ["R", "ggplot2", "dplyr", "tidyverse", "scales", "patchwork", "janitor"],
+    insights: [
+      "Charted the historical shift of dairy cattle overtaking beef cattle as NZ's dominant livestock sector",
+      "Tracked wheat yield-per-hectare improvements from 1935–2024, showing steady agricultural efficiency gains",
+      "Aggregated 2024 land use into five categories, revealing the dominance of pasture and grassland",
+      "Combined cattle and wheat panels into a branded multi-plot layout using patchwork"
+    ],
+    github: "https://github.com/gokturkcolak/tidytuesday/blob/main/2026/Week_7/nz_agricultural_production.Rmd",
+    visualization: "https://github.com/gokturkcolak/tidytuesday/blob/main/2026/Week_7/nz_agricultural_production.png"
   }
-  // Add more entries as you complete them
 ];
 
 export default function TidyTuesdaySection() {
@@ -38,7 +67,7 @@ export default function TidyTuesdaySection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">TidyTuesday Challenge</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Weekly data visualization challenges by the global Data Science Learning Community (R4DS), showcasing my R programming and data analysis skills.
+            Weekly data visualization challenges by the global Data Science Learning Community (R4DS), showcasing my R programming and data analysis skills.
           </p>
         </motion.div>
 
