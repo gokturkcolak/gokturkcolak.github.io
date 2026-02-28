@@ -110,11 +110,11 @@ export default function ContactSection() {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                    <span className="text-sm">Quantitative Finance & Trading</span>
+                    <span className="text-sm">Data Science & Machine Learning</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                    <span className="text-sm">Data Science & Machine Learning</span>
+                    <span className="text-sm">Quantitative Finance & Trading</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full" />
@@ -122,7 +122,7 @@ export default function ContactSection() {
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                    <span className="text-sm">Financial Technology</span>
+                    <span className="text-sm">Blockchain Projects</span>
                   </li>
                 </ul>
 

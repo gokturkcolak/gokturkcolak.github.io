@@ -13,8 +13,8 @@ const skillCategories = [
     skills: [
       { name: "Python", level: "Advanced", details: "NumPy, Pandas, Matplotlib, scikit-learn, catboost, XGBoost" },
       { name: "R Programming", level: "Advanced", details: "ggplot2, tidyr, dplyr, caret, catboost, XGBoost, shiny" },
-      { name: "MS Excel", level: "Advanced", details: "Complex formulas, pivot tables" },
-      { name: "GitHub", level: "Intermediate", details: "Version control, collaboration" }
+      { name: "MS Excel", level: "Intermediate", details: "Complex formulas, pivot tables" },
+      { name: "GitHub", level: "Advanced", details: "Version control, collaboration" }
     ]
   },
   {
@@ -56,8 +56,7 @@ const skillCategories = [
     description: "Multilingual communication abilities",
     skills: [
       { name: "Turkish", level: "Native", details: "Native speaker" },
-      { name: "English", level: "Fluent", details: "Academic and professional proficiency" },
-      { name: "French", level: "Elementary", details: "A2 level - Basic conversational skills" }
+      { name: "English", level: "Fluent", details: "Academic and professional proficiency" }
     ]
   }
 ];
@@ -155,8 +154,8 @@ export default function SkillsSection() {
               <h3 className="text-xl font-semibold mb-4">Currently Learning</h3>
               <div className="flex flex-wrap justify-center gap-2">
                 <Badge variant="outline">Machine Learning</Badge>
-                <Badge variant="outline">Advanced Statistical Modeling</Badge>
-                <Badge variant="outline">Blockchain Analytics</Badge>
+                <Badge variant="outline">Deep Learning</Badge>
+                <Badge variant="outline">Computer Vision</Badge>
                 <Badge variant="outline">Quantitative Finance</Badge>
               </div>
             </CardContent>
@@ -174,18 +173,14 @@ export default function SkillsSection() {
           <Card className="bg-primary/5 border-primary/20">
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold mb-4">Currently Reading</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                <div className="p-4 bg-background rounded-lg border">
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                <div className="p-4 bg-background rounded-lg border flex-1 min-w-[280px] max-w-[350px]">
                   <h4 className="font-semibold text-sm mb-1">Systematic Trading</h4>
                   <p className="text-xs text-muted-foreground">Robert Carver</p>
                 </div>
-                <div className="p-4 bg-background rounded-lg border">
+                <div className="p-4 bg-background rounded-lg border flex-1 min-w-[280px] max-w-[350px]">
                   <h4 className="font-semibold text-sm mb-1">An Introduction to Statistical Learning with Applications in R</h4>
                   <p className="text-xs text-muted-foreground">Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani</p>
-                </div>
-                <div className="p-4 bg-background rounded-lg border">
-                  <h4 className="font-semibold text-sm mb-1">Options, Futures and Other Derivatives</h4>
-                  <p className="text-xs text-muted-foreground">John C. Hull</p>
                 </div>
               </div>
             </CardContent>
