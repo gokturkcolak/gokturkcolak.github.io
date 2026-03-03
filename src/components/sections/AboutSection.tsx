@@ -62,7 +62,7 @@ export default function AboutSection() {
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">Istanbul University</p>
                 <p className="font-medium">Economics (100% English)</p>
-                <p className="text-sm text-muted-foreground">GPA: 3.64/4.0 • Currently</p>
+                <p className="text-sm text-muted-foreground">GPA: 3.70/4.0 • Currently</p>
               </CardContent>
             </Card>
 
