@@ -89,7 +89,7 @@ export default function CompetitionsSection() {
                       <div className="text-right text-sm text-muted-foreground">
                         <div className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />
-                          {new Date(competition.date).toLocaleDateString()}
+                          {new Date(competition.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                         </div>
                         <div className="flex items-center gap-1 mt-1">
                           <Users className="w-4 h-4" />

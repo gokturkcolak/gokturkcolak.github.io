@@ -56,7 +56,8 @@ const skillCategories = [
     description: "Multilingual communication abilities",
     skills: [
       { name: "Turkish", level: "Native", details: "Native speaker" },
-      { name: "English", level: "Fluent", details: "Academic and professional proficiency" }
+      { name: "English", level: "Fluent", details: "Academic and professional proficiency" },
+      { name: "German", level: "Elementary", details: "Basic (A1), self-studying" }
     ]
   }
 ];

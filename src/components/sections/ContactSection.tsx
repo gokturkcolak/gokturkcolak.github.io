@@ -10,8 +10,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "gokturkcolaktkd@gmail.com",
-    href: "mailto:gokturkcolaktkd@gmail.com"
+    value: "gokturkcolakdev@gmail.com",
+    href: "mailto:gokturkcolakdev@gmail.com"
   },
   {
     icon: MapPin,
@@ -128,7 +128,7 @@ export default function ContactSection() {
 
                 <div className="pt-4 space-y-3">
                   <Button className="w-full gap-2" asChild>
-                    <a href="mailto:gokturkcolaktkd@gmail.com">
+                    <a href="mailto:gokturkcolakdev@gmail.com">
                       <Mail className="w-4 h-4" />
                       Send Email
                     </a>
@@ -155,7 +155,7 @@ export default function ContactSection() {
           className="text-center mt-16 pt-8 border-t"
         >
           <p className="text-muted-foreground">
-            © 2025 Göktürk Çolak
+            © 2026 Göktürk Çolak
           </p>
         </motion.div>
       </div>

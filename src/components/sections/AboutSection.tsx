@@ -6,7 +6,7 @@ import { GraduationCap, MapPin, Calendar } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-muted/30">
+    <section id="about" className="pt-8 pb-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,9 +36,12 @@ export default function AboutSection() {
             </p>
 
             <p className="text-lg leading-relaxed">
-              Currently developing an algorithmic trading system in my junior year and having completed my
-              Macroeconomic Analysis paper as a sophomore, I combine theoretical knowledge with practical programming
-              skills in Python and R to create meaningful insights from complex financial data.
+              Currently building BuildHub, a data/AI-focused startup collective of 14 members,
+              where I contribute across data science and product development as we move from
+              idea to a working demo.
+              Having also completed my Macroeconomic Analysis paper as a sophomore, I combine
+              theoretical knowledge with practical programming skills in Python and R to
+              create meaningful insights from complex financial data.
             </p>
 
             <p className="text-lg leading-relaxed">
@@ -56,13 +59,39 @@ export default function AboutSection() {
           >
             <Card>
               <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3 mb-4">
                   <GraduationCap className="w-5 h-5 text-primary" />
                   <h3 className="font-semibold">Education</h3>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Istanbul University</p>
-                <p className="font-medium">Economics (100% English)</p>
-                <p className="text-sm text-muted-foreground">GPA: 3.70/4.0 • Currently</p>
+                <div className="space-y-4">
+                  <div>
+                    <div className="flex justify-between items-start mb-1">
+                      <p className="font-medium">Istanbul University</p>
+                      <span className="text-[10px] uppercase tracking-wider text-muted-foreground">Istanbul, TR</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">Economics (100% English)</p>
+                    <p className="text-xs text-muted-foreground">GPA: 3.70/4.0 • 4. Year</p>
+                  </div>
+                  
+                  <div className="pt-4 border-t border-border">
+                    <div className="flex justify-between items-start mb-1">
+                      <p className="font-medium">University of Tübingen</p>
+                      <span className="text-[10px] uppercase tracking-wider text-muted-foreground">Tübingen, Germany</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">Erasmus+ Exchange • Economics & Data Science</p>
+                    <p className="text-xs text-muted-foreground mb-2">April 2026 – Sept. 2026</p>
+                    <ul className="space-y-1.5 mt-2">
+                      <li className="text-[11px] leading-normal text-muted-foreground flex gap-1.5">
+                        <span className="text-primary mt-1">•</span>
+                        <span>S310 – Applied Quantitative Methods: Monte Carlo, OLS, Binary Choice, Time Series (R)</span>
+                      </li>
+                      <li className="text-[11px] leading-normal text-muted-foreground flex gap-1.5">
+                        <span className="text-primary mt-1">•</span>
+                        <span>DS320 – Intro to Data Science: Data manipulation and analysis in R and Python</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 

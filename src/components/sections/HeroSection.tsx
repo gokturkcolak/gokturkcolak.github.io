@@ -68,7 +68,7 @@ export default function HeroSection() {
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>
-                <a href="mailto:gokturkcolaktkd@gmail.com">
+                <a href="mailto:gokturkcolakdev@gmail.com">
                   <Mail className="w-4 h-4" />
                 </a>
               </Button>

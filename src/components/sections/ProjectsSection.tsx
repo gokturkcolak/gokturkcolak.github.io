@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, TrendingUp, BarChart3, Activity } from "lucide-react";
+import { Github, TrendingUp, BarChart3 } from "lucide-react";
 
 const projects = [
   {
     title: "Algorithmic Trading System",
-    description: "A quantitative trading engine applying the economic theory of Hysteresis to reduce market noise and whipsaw trades. Features a production-ready ML pipeline deployed 24/7 on AWS EC2.",
+    description: "A quantitative trading engine applying the economic theory of Hysteresis to reduce market noise and whipsaw trades. Features a production-ready ML pipeline deployed 24/7 on AWS EC2. (actively developed in 2025; not currently maintained)",
     icon: TrendingUp,
-    status: "Ongoing",
+    status: "Paused",
     technologies: ["Python", "XGBoost", "Scikit-learn", "Pandas", "NumPy", "AWS EC2", "Quantitative Finance"],
     features: [
       "Signal refinement using an XGBoost Classifier trained on RSI, MACD, and OBV indicators",

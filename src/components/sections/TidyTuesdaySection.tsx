@@ -85,7 +85,7 @@ export default function TidyTuesdaySection() {
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                       <Calendar className="w-4 h-4" />
-                      {new Date(entry.date).toLocaleDateString()}
+                      {new Date(entry.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                     </div>
                     <CardTitle className="text-lg">{entry.title}</CardTitle>
                     <Badge variant="outline" className="w-fit">
