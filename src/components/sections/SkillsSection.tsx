@@ -136,12 +136,13 @@ export default function SkillsSection() {
         >
           <Card className="bg-elevated border-transparent">
             <CardContent className="p-8">
-              <h3 className="text-subheading mb-4">Currently Learning</h3>
+              <h3 className="text-subheading mb-4">Current Focus</h3>
               <div className="flex flex-wrap justify-center gap-2">
-                <Badge variant="outline">Machine Learning</Badge>
-                <Badge variant="outline">Deep Learning</Badge>
-                <Badge variant="outline">Computer Vision</Badge>
+                <Badge variant="outline">Agentic AI</Badge>
+                <Badge variant="outline">LLM Applications</Badge>
+                <Badge variant="outline">MCP Servers</Badge>
                 <Badge variant="outline">Quantitative Finance</Badge>
+                <Badge variant="outline">Algorithmic Trading</Badge>
               </div>
             </CardContent>
           </Card>

@@ -7,7 +7,7 @@ import { Kaggle } from "@/components/icons/Kaggle";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-[85vh] flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-4 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ export default function HeroSection() {
           </motion.h1>
 
           <motion.p
-            className="eyebrow text-body-sm max-w-3xl mx-auto"
+            className="eyebrow text-label md:text-body-lg max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}

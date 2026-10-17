@@ -24,6 +24,7 @@ npm run lint
 - `src/components/sections/` holds the homepage sections (Hero, About, Experience, Projects, Skills, Competitions, TidyTuesday, Contact)
 - `src/components/ui/` holds the shared primitives (button, card, badge, sheet, navigation-menu, theme toggle)
 - `public/` holds static assets, including `cv.pdf` and the favicons
+- `public/photos/` holds the photos for the banner under the hero (`PhotoBanner.tsx`). They're read at build time: the filename sets the order and the caption (`01-Tübingen-Neckar.jpg` becomes "Tübingen Neckar"). Use JPG or WebP about 1600px wide.
 
 ## Deployment
 
