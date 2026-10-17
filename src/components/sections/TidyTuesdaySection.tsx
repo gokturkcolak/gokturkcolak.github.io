@@ -56,7 +56,7 @@ const tidyTuesdayEntries = [
 
 export default function TidyTuesdaySection() {
   return (
-    <section id="tidytuesday" className="py-20 bg-muted/30">
+    <section id="tidytuesday" className="py-16 md:py-24 border-t">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,8 +65,8 @@ export default function TidyTuesdaySection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">TidyTuesday Challenge</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-heading-sm md:text-heading-lg mb-4">TidyTuesday Challenge</h2>
+          <p className="text-body md:text-body-lg text-muted-foreground max-w-3xl mx-auto">
             Weekly data visualization challenges by the global Data Science Learning Community (R4DS), showcasing my R programming and data analysis skills.
           </p>
         </motion.div>
@@ -87,7 +87,7 @@ export default function TidyTuesdaySection() {
                       <Calendar className="w-4 h-4" />
                       {new Date(entry.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                     </div>
-                    <CardTitle className="text-lg">{entry.title}</CardTitle>
+                    <CardTitle>{entry.title}</CardTitle>
                     <Badge variant="outline" className="w-fit">
                       {entry.dataset}
                     </Badge>
@@ -98,7 +98,7 @@ export default function TidyTuesdaySection() {
 
                   <CardContent className="space-y-4">
                     <div>
-                      <h4 className="font-semibold mb-2 text-sm">Key Insights</h4>
+                      <h4 className="eyebrow mb-3">Key Insights</h4>
                       <ul className="space-y-1">
                         {entry.insights.map((insight, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm">
@@ -110,7 +110,7 @@ export default function TidyTuesdaySection() {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold mb-2 text-sm">Tools & Methods</h4>
+                      <h4 className="eyebrow mb-3">Tools & Methods</h4>
                       <div className="flex flex-wrap gap-1">
                         {entry.technologies.map((tech) => (
                           <Badge key={tech} variant="secondary" className="text-xs">
@@ -151,7 +151,7 @@ export default function TidyTuesdaySection() {
               <Card className="text-center py-12">
                 <CardContent>
                   <BarChart3 className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold mb-2">Coming Soon</h3>
+                  <h3 className="text-subheading mb-2">Coming Soon</h3>
                   <p className="text-muted-foreground">
                     TidyTuesday entries will be showcased here as I complete weekly challenges
                   </p>

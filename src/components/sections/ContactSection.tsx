@@ -35,7 +35,7 @@ const contactInfo = [
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="py-16 md:py-24 border-t">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,8 +44,8 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-heading-sm md:text-heading-lg mb-4">Get In Touch</h2>
+          <p className="text-body md:text-body-lg text-muted-foreground max-w-3xl mx-auto">
             I&apos;m always open to discussing new opportunities, collaborations, or just having a conversation about economics and data science.
           </p>
         </motion.div>
@@ -72,17 +72,17 @@ export default function ContactSection() {
                     href={contact.href}
                     target={contact.href.startsWith('http') ? '_blank' : undefined}
                     rel={contact.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors group"
+                    className="flex items-center gap-3 p-3 rounded-2xl hover:bg-muted transition-colors group"
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                    <div className="p-2.5 border rounded-full group-hover:border-foreground transition-colors">
                       <contact.icon className="w-4 h-4 text-primary" />
                     </div>
                     <div>
-                      <p className="font-medium text-sm">{contact.label}</p>
+                      <p className="eyebrow mb-1">{contact.label}</p>
                       <p className="text-sm text-muted-foreground">{contact.value}</p>
                     </div>
                   </motion.a>
@@ -127,14 +127,14 @@ export default function ContactSection() {
                 </ul>
 
                 <div className="pt-4 space-y-3">
-                  <Button className="w-full gap-2" asChild>
+                  <Button variant="accent" className="w-full" asChild>
                     <a href="mailto:gokturkcolakdev@gmail.com">
                       <Mail className="w-4 h-4" />
                       Send Email
                     </a>
                   </Button>
 
-                  <Button variant="outline" className="w-full gap-2" asChild>
+                  <Button variant="outline" className="w-full" asChild>
                     <a href="/cv.pdf" download="Gokturk_Colak_CV.pdf">
                       <Download className="w-4 h-4" />
                       Download CV
@@ -154,7 +154,7 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mt-16 pt-8 border-t"
         >
-          <p className="text-muted-foreground">
+          <p className="eyebrow">
             © 2026 Göktürk Çolak
           </p>
         </motion.div>

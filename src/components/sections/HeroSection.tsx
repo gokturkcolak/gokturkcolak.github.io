@@ -16,7 +16,7 @@ export default function HeroSection() {
           className="space-y-6"
         >
           <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight"
+            className="text-[52px] md:text-display"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -25,7 +25,7 @@ export default function HeroSection() {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto"
+            className="eyebrow text-body-sm max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -34,7 +34,7 @@ export default function HeroSection() {
           </motion.p>
 
           <motion.p
-            className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed"
+            className="text-body md:text-body-lg text-muted-foreground max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -49,14 +49,14 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <Button size="lg" className="gap-2" asChild>
+            <Button variant="accent" size="lg" asChild>
               <a href="/cv.pdf" download="Gokturk_Colak_CV.pdf">
                 <Download className="w-4 h-4" />
                 Download CV
               </a>
             </Button>
 
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               <Button variant="outline" size="icon" asChild>
                 <a href="https://github.com/gokturkcolak" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4" />
@@ -83,9 +83,9 @@ export default function HeroSection() {
       </div>
 
       {/* Background decoration */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-40 -right-32 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-32 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className="absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full bg-gradient-to-br from-coral/80 to-sky-blue/80 blur-[75px] opacity-35 dark:opacity-25" />
+        <div className="absolute -bottom-32 -left-24 w-[460px] h-[460px] rounded-full bg-gradient-to-tr from-sky-blue/80 to-mint/80 blur-[75px] opacity-35 dark:opacity-25" />
       </div>
     </section>
   );

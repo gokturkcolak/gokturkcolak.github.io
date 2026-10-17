@@ -40,7 +40,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-16 md:py-24 border-t">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,8 +49,8 @@ export default function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-heading-sm md:text-heading-lg mb-4">Featured Projects</h2>
+          <p className="text-body md:text-body-lg text-muted-foreground max-w-3xl mx-auto">
             A showcase of my work in quantitative finance, data analysis, and economic research
           </p>
         </motion.div>
@@ -68,11 +68,11 @@ export default function ProjectsSection() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="p-2 bg-primary/10 rounded-lg">
+                      <div className="p-2.5 border rounded-full">
                         <project.icon className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <CardTitle className="text-xl">{project.title}</CardTitle>
+                        <CardTitle>{project.title}</CardTitle>
                         <Badge variant={project.status === "Ongoing" ? "default" : "secondary"} className="mt-2">
                           {project.status}
                         </Badge>
@@ -86,7 +86,7 @@ export default function ProjectsSection() {
 
                 <CardContent className="space-y-6">
                   <div>
-                    <h4 className="font-semibold mb-3">Key Features</h4>
+                    <h4 className="eyebrow mb-3">Key Features</h4>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                       {project.features.map((feature, i) => (
                         <li key={i} className="flex items-center gap-2 text-sm">
@@ -98,7 +98,7 @@ export default function ProjectsSection() {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold mb-3">Tools & Methods</h4>
+                    <h4 className="eyebrow mb-3">Tools & Methods</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
                         <Badge key={tech} variant="outline">
