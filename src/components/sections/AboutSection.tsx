@@ -17,7 +17,7 @@ export default function AboutSection() {
         >
           <h2 className="text-heading-sm md:text-heading-lg mb-4">About Me</h2>
           <p className="text-body md:text-body-lg text-muted-foreground max-w-3xl mx-auto">
-            Economics undergraduate with a strong foundation in quantitative methods and data analysis for financial markets.
+            Economics student who&apos;d rather run the numbers than just read about them.
           </p>
         </motion.div>
 
@@ -30,23 +30,24 @@ export default function AboutSection() {
             className="space-y-6"
           >
             <p className="text-body md:text-body-lg max-w-prose">
-              I&apos;m an economics student at Istanbul University with a deep interest in financial markets,
-              macroeconomic analysis, and data science. My academic journey has equipped me
-              with strong analytical skills and a solid foundation in economic theory.
+              I&apos;m in my fourth year of economics at Istanbul University. I spent April to
+              September 2026 on an Erasmus exchange at the University of Tübingen. Most of my
+              work there was econometrics in R: simulating the power of a test, fitting OLS and
+              logit models, and modeling time series. I also wrote a seminar paper there on
+              whether Bitcoin&apos;s fixed supply could do the job of inflation targeting.
             </p>
 
             <p className="text-body md:text-body-lg max-w-prose">
-              Currently building BuildHub, a data/AI-focused startup collective of 14 members,
-              where I contribute across data science and product development as we move from
-              idea to a working demo.
-              Having also completed my Macroeconomic Analysis paper as a sophomore, I combine
-              theoretical knowledge with practical programming skills in Python and R to
-              create meaningful insights from complex financial data.
+              I&apos;ve learned most of what I know about markets by building things. In 2025 I
+              wrote an algorithmic trading system that uses the economic idea of hysteresis to
+              filter out noise and avoid whipsaw trades, and I ran it around the clock on AWS.
+              In my second year I wrote a paper on the U.S. economy from 2008 to 2023, from the
+              Great Recession through COVID-19.
             </p>
 
             <p className="text-body md:text-body-lg max-w-prose">
-              With strong English proficiency, I bring analytical rigor to my work and
-              am passionate about using technology to solve real-world economic problems.
+              I also worked on the data science and product side of a project at BuildHub,
+              a 14-person group building data and AI products.
             </p>
           </motion.div>
 

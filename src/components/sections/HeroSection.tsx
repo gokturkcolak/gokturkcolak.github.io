@@ -39,8 +39,8 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Specializing in data science, quantitative finance, and macroeconomic analysis.
-            Learning to extract insights from complex financial and economic data.
+            I study economics at Istanbul University and test what I learn in code:
+            time-series models in R and a trading system in Python.
           </motion.p>
 
           <motion.div

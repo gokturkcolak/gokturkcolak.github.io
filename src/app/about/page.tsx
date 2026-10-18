@@ -4,7 +4,8 @@ export default function AboutPage() {
       <div className="max-w-3xl mx-auto py-8 px-4">
         <h1 className="text-heading mb-6">About Me</h1>
         <p className="mb-4">
-          Economics student specializing in quantitative methods and data analysis...
+          Fourth-year economics student at Istanbul University. I use Python and R to work
+          with market and macroeconomic data.
         </p>
         <div className="grid grid-cols-2 gap-4 mt-8">
           <div>

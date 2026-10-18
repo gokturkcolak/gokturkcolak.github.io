@@ -4,9 +4,22 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, TrendingUp, BarChart3 } from "lucide-react";
+import { Github, TrendingUp, BarChart3, Bitcoin } from "lucide-react";
 
 const projects = [
+  {
+    title: "Bitcoin's 21M Cap vs. Inflation Targeting",
+    description: "A seminar paper for Topics in Crypto at the University of Tübingen (Aug. 2026). It asks whether Bitcoin's fixed supply of 21 million coins solves the time-inconsistency problem that inflation targeting was designed to address.",
+    icon: Bitcoin,
+    status: "Completed",
+    technologies: ["Monetary Economics", "Economic History", "Academic Research"],
+    features: [
+      "Framed the time-inconsistency problem using Kydland-Prescott, Barro-Gordon, and Bernanke-Mishkin",
+      "Compared the two regimes by their escape clauses, using interwar gold standard evidence",
+      "Applied Fisher's debt-deflation theory to a fixed-supply currency",
+      "Concluded that a fixed supply strengthens commitment but is an inferior monetary rule: debt-deflation risk, extreme price volatility, and a shrinking fee base for network security"
+    ]
+  },
   {
     title: "Algorithmic Trading System",
     description: "A quantitative trading engine applying the economic theory of Hysteresis to reduce market noise and whipsaw trades. Features a production-ready ML pipeline deployed 24/7 on AWS EC2. (actively developed in 2025; not currently maintained)",
