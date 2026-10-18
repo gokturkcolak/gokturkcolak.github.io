@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 Personal portfolio site for Göktürk Çolak, served at https://gokturkcolak.github.io.
 
 ## Stack
@@ -18,6 +20,8 @@ npm run build   # static export to ./out
 npm run lint
 ```
 
+There are no tests. Run `npm run build` to check a change: it type-checks, lints, and runs the static export.
+
 ## Structure
 
 - `src/app/` holds routes: `/`, `/about`, `/projects`, `/projects/tidytuesday_analysis`, `/certifications`, `/finance`
@@ -26,10 +30,18 @@ npm run lint
 - `public/` holds static assets, including `cv.pdf` and the favicons
 - `public/photos/` holds the photos for the banner under the hero (`PhotoBanner.tsx`). They're read at build time: the filename sets the order and the caption (`01-Tübingen-Neckar.jpg` becomes "Tübingen Neckar"). Use JPG or WebP about 1600px wide.
 
+## Architecture
+
+- Site content (projects, experience, skills, competitions, TidyTuesday entries, contact links) is hard-coded as arrays at the top of each section component, e.g. `const projects = [...]` in `ProjectsSection.tsx`. To change text, edit those arrays. There's no CMS or data folder.
+- The sections are client components (`"use client"`) because they use framer-motion. `PhotoBanner.tsx` is the exception: it's a server component that reads `public/photos/` with `fs` at build time, so it must not get `"use client"`.
+- `layout.tsx` wraps every page in `ThemeProvider` (next-themes, `attribute="class"`) and renders `Navbar`, with `MobileNav` for small screens. Dark mode works through the `.dark` class: `globals.css` overrides the tokens under `.dark` and declares `@custom-variant dark`.
+- Imports use the `@/*` alias, which points to `src/*`. `components.json` is the shadcn config (new-york style), so add new primitives to `src/components/ui/`.
+- The theme switch is `src/components/ui/theme-toggle.tsx`, used by `Navbar`. `README.md` only links to the live site, on purpose. Don't add repo docs there.
+
 ## Deployment
 
 - The site is a static export (`output: 'export'`, `trailingSlash: true`, unoptimized images). Don't use features that need a server: no API routes, no server actions, no middleware, no runtime `next/image` optimization.
-- `.github/workflows/deploy.yml` builds and deploys `./out` to GitHub Pages on every push to `main`.
+- `.github/workflows/deploy.yml` builds and deploys `./out` to GitHub Pages on every push to `main`, using Node 18. It also runs on pull requests to `main`, including the deploy step.
 - `next.config.js` and `next.config.ts` both exist. Next.js loads the `.js` one, so keep the two in sync or remove one.
 
 ## Design
