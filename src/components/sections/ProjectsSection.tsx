@@ -4,9 +4,23 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, TrendingUp, BarChart3, Bitcoin } from "lucide-react";
+import { Github, TrendingUp, BarChart3, Bitcoin, Landmark } from "lucide-react";
 
 const projects = [
+  {
+    title: "Credit Risk and Econometric Modeling in R",
+    description: "An econometrics project in R from my exchange at the University of Tübingen (Aug. 2026). It models loan default on 45,000 loan applications, tests how the estimators behave with Monte Carlo simulations, and fits time-series models to China's CO2 emissions.",
+    icon: Landmark,
+    status: "Completed",
+    technologies: ["R", "Logit", "Maximum Likelihood", "Monte Carlo Simulation", "Time Series Analysis"],
+    features: [
+      "Compared a linear probability model with logit on 45,000 loan applications, using average partial effects and robust standard errors",
+      "Diagnosed quasi-complete separation in the logit model",
+      "Checked estimator bias, variance and MSE, and test power curves, against asymptotic theory with Monte Carlo simulations",
+      "Implemented Bernoulli maximum likelihood estimation with numerical optimization",
+      "Modeled China's CO2 emissions growth with AR models, using ADF tests, AIC/BIC lag selection and Ljung-Box diagnostics"
+    ]
+  },
   {
     title: "Bitcoin's 21M Cap vs. Inflation Targeting",
     description: "A seminar paper for Topics in Crypto at the University of Tübingen (Aug. 2026). It asks whether Bitcoin's fixed supply of 21 million coins solves the time-inconsistency problem that inflation targeting was designed to address.",

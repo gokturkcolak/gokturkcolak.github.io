@@ -142,7 +142,6 @@ export default function SkillsSection() {
                 <Badge variant="outline">LLM Applications</Badge>
                 <Badge variant="outline">MCP Servers</Badge>
                 <Badge variant="outline">Quantitative Finance</Badge>
-                <Badge variant="outline">Algorithmic Trading</Badge>
               </div>
             </CardContent>
           </Card>

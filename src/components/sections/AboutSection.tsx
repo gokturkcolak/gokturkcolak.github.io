@@ -31,18 +31,19 @@ export default function AboutSection() {
           >
             <p className="text-body md:text-body-lg max-w-prose">
               I&apos;m in my fourth year of economics at Istanbul University. I spent April to
-              September 2026 on an Erasmus exchange at the University of Tübingen. Most of my
-              work there was econometrics in R: simulating the power of a test, fitting OLS and
-              logit models, and modeling time series. I also wrote a seminar paper there on
-              whether Bitcoin&apos;s fixed supply could do the job of inflation targeting.
+              September 2026 on an Erasmus exchange at the University of Tübingen. For a
+              credit risk project there, I compared linear probability and logit models on
+              45,000 loan applications and checked the estimators with Monte Carlo
+              simulations. I also wrote a seminar paper on whether Bitcoin&apos;s fixed supply
+              could do the job of inflation targeting.
             </p>
 
             <p className="text-body md:text-body-lg max-w-prose">
               I&apos;ve learned most of what I know about markets by building things. In 2025 I
               wrote an algorithmic trading system that uses the economic idea of hysteresis to
               filter out noise and avoid whipsaw trades, and I ran it around the clock on AWS.
-              In my second year I wrote a paper on the U.S. economy from 2008 to 2023, from the
-              Great Recession through COVID-19.
+              In my second year I wrote a paper on the U.S. economy from the Great Recession
+              through COVID-19.
             </p>
 
             <p className="text-body md:text-body-lg max-w-prose">

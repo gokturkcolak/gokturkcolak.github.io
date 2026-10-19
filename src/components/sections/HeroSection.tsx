@@ -39,8 +39,8 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            I study economics at Istanbul University and test what I learn in code:
-            time-series models in R and a trading system in Python.
+            Economics student at Istanbul University. I use R and Python to model
+            credit risk, time series and trading strategies.
           </motion.p>
 
           <motion.div
