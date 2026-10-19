@@ -1,4 +1,5 @@
 import HeroSection from "@/components/sections/HeroSection";
+import PhotoBanner from "@/components/sections/PhotoBanner";
 import AboutSection from "@/components/sections/AboutSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import TidyTuesdaySection from "@/components/sections/TidyTuesdaySection";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      <PhotoBanner />
       <AboutSection />
       <ProjectsSection />
       <TidyTuesdaySection />

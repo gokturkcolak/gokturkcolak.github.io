@@ -1,4 +1,4 @@
-import { Noto_Serif_JP, Noto_Sans_JP } from 'next/font/google';
+import { IBM_Plex_Mono, Noto_Sans_JP, Noto_Serif_JP } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/ui/theme-provider';
 import Navbar from '@/components/Navbar';
@@ -35,8 +35,9 @@ export const metadata: Metadata = {
   },
 };
 
-const notoSerif = Noto_Serif_JP({ subsets: ['latin'], weight: ['400'], variable: '--font-noto-serif-jp' });
-const notoSans = Noto_Sans_JP({ subsets: ['latin'], weight: ['400'], variable: '--font-noto-sans-jp' });
+const notoSerif = Noto_Serif_JP({ subsets: ['latin', 'latin-ext'], weight: ['400', '600'], variable: '--font-noto-serif-jp' });
+const notoSans = Noto_Sans_JP({ subsets: ['latin', 'latin-ext'], weight: ['400', '500', '600'], variable: '--font-noto-sans-jp' });
+const plexMono = IBM_Plex_Mono({ subsets: ['latin', 'latin-ext'], weight: ['400', '500'], variable: '--font-plex-mono' });
 
 export default function RootLayout({
   children,
@@ -44,8 +45,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${notoSerif.variable} ${notoSans.variable} antialiased`}>
+    <html lang="en" className={`${notoSerif.variable} ${notoSans.variable} ${plexMono.variable}`} suppressHydrationWarning>
+      <body className="antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
